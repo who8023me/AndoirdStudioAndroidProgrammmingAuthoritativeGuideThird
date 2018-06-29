@@ -18,7 +18,7 @@ public class Question {
     public void setAnswerTrue(boolean answerTrue) {
         mAnswerTrue = answerTrue;
     }
-    
+
     public Question(int textResId,boolean answerTrue)
     {
         mTextResId=textResId;
