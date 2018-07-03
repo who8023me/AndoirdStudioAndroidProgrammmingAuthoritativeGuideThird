@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class QuizActivity extends AppCompatActivity {
     private Button mTrueButton;
     private Button mFalseButton;
+    private Button mCheatButton;
     private ImageButton mNextButton;
     private ImageButton mPrevButton;
     private TextView mQuestionTextView;
@@ -64,6 +65,13 @@ public class QuizActivity extends AppCompatActivity {
                 //toast.show();
                 checkAnswer(false);
 
+            }
+        });
+        mCheatButton=(Button)findViewById(R.id.cheat_button);
+        mCheatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //start CheatActivity
             }
         });
         mNextButton=(ImageButton)findViewById(R.id.next_button);
