@@ -1,5 +1,6 @@
 package com.ghkj.simon.geoquiz;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -78,6 +79,8 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //start CheatActivity
+                Intent intent = new Intent(QuizActivity.this,CheatActivity.class);
+                startActivity(intent);
             }
         });
         mNextButton=(Button)findViewById(R.id.next_button);
