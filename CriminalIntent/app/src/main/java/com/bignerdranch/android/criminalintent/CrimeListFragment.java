@@ -15,6 +15,7 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 import java.util.List;
+import java.util.UUID;
 
 public class CrimeListFragment extends Fragment{
     //Nothing yet;
@@ -42,6 +43,7 @@ public class CrimeListFragment extends Fragment{
         private TextView mDateTextView;
         private ImageView mSlovedImageView;
         private Crime mCrime;
+
         public CrimeHolder(LayoutInflater inflater,ViewGroup parent)
         {
             super(inflater.inflate(R.layout.list_item_crime,parent,false));
